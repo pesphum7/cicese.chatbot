@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://imgtoboot.000webhostapp.com/index">
+    <title>chatbot hoteles</title>
+   
+   <!--esta linea es para poner un icono-->
+    <link rel="icon" href="cicese.jpeg" type="image/jpeg" sizes="16x16"> 
+   <!--link para bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+
+<body onresize="rezise()" onload="navtam()">
+
+
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index">Cicese ut<sup>3</sup></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!--
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                -->
+            </ul>
+            <!--
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid img-cicese" id="jump">
+        <div class="container">
+            <h1 class="display-4">Bienvenido</h1>
+            <p class="lead">Conoce a nuestro chatbot de hoteles</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-end" id="row">
+
+
+            <div class="col-4 d-none d-sm-none d-md-block" id="bases">
+                <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column sticker">
+                    <a class="navbar-brand" href="">chatbot</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item">como usarlo</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-1">Secciones </a>
+                        </nav>
+                        <a class="nav-link" href="#info">Información de uso</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#info-1">Que es?</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+
+
+            <div class="col-md-8">
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+                    <h4 id="item">como usarlo</h4>
+                    <p>
+                        Bienvenido amigo somos Cicese UT<sup>3</sup> y esta es la pagina de contacto a nuestro chatbot el  cual esta destinado a todos los hoteles facilitando así el uso de los servicios los cuales son automatizados para contestar de manera dinámica todas tus preguntas.
+                    </p>
+                    <p>
+                        Para esto se ha utilizado el tan conocido pero poco usado procesamiento de lenguaje natural el cual nos ayuda a gestionar el control de acceso a los recursos y dar la mejor respuesta a eso.
+                    </p>
+                    <h5 id="item-1">Secciones<h5>
+                    <div class="list-group">
+                        <a href="#restaurante" class="list-group-item list-group-item-action">Restaurante</a>
+                        <a href="#albercas" class="list-group-item list-group-item-action">Albercas</a>
+                        <a href="#actividades" class="list-group-item list-group-item-action">Actividades</a>
+                        <a href="#promociones" class="list-group-item list-group-item-action">Promociones</a>
+                        <a href="#salones" class="list-group-item list-group-item-action">Salones</a>
+                        <a href="#vacantes" class="list-group-item list-group-item-action">Vacantes</a>
+                    </div>
+
+
+                    <h6>Restaurante </h6>
+                    <section id="restaurante" class="res">
+                        <div class="pantalla">Lista de respuestas</div>
+                        <ul class="list-unstyled lista">
+                            <li>Días de apertura</li>
+                            <li>Días de cierre</li>
+                            <li>Edad de ingreso</li>
+                            <li>Hora de apertura</li>
+                            <li>Hora de cierre</li>
+                            <li>Horario</li>
+                            <li>Vestimenta</li>
+                        </ul>
+                    </section>
+
+                    <h6>albercas </h6>
+                    <section id="albercas" class="res">
+                        <div class="pantalla">Lista de albercas</div>
+                        <ul class="list-unstyled lista">
+                            <li>Profundidad</li>
+                            <li>Días de apertura</li>
+                            <li>Días de cierre</li>
+                            <li>Hora de apertura</li>
+                            <li>Hora de cierre</li>
+                            <li>Horario</li>
+                            <li>Edad de ingreso</li>
+                            <li>Oferta</li>
+                            <li>Vestimenta</li>
+                            
+                        </ul>
+                    </section>
+
+                    <h6>Actividades </h6>
+                    <section id="actividades" class="res">
+                        <div class="pantalla">Lista de actividades</div>
+                        
+                        <ul class="list-unstyled lista">
+                            <li>Lugar de las actividades</li>
+                            <li>Días de apertura</li>
+                            <li>Días de cierre</li>
+                            <li>Hora de apertura</li>
+                            <li>Hora de cierre</li>
+                            <li>Horario</li>
+                            
+                        </ul>
+                    </section>
+
+                    <h6>Promociones</h6>
+                    <section id="promociones" class="res">
+                        <div class="pantalla">Lista de Promociones</div>
+                        
+                        <ul class="list-unstyled lista">
+                            <li>Precio</li>
+                            <li>Días de apertura</li>
+                            <li>Días de cierre</li>
+                            <li>Horario</li>
+                            
+                        </ul>
+                    </section>
+
+                    <h6>Salones </h6>
+                    <section id="salones" class="res">
+                        <div class="pantalla">Lista de salones</div>
+                        
+                        <ul class="list-unstyled lista">
+                            <li> Cantidad de personas máximas en el salón</li>
+                            <li>Días de cierre</li>
+                            <li>Costo por hora</li>
+                            <li>Precio general</li>
+                            
+                        </ul>
+                    </section>
+
+                    <h6>Habitaciones </h6>
+                    <section id="habitaciones" class="res">
+                        <div class="pantalla">Lista de Habitaciones</div>
+                        
+                        <ul class="list-unstyled lista">
+                            <li>Tipo de Habitaciones</li>
+                            <li>Precio</li>
+                            <li>Tamaño de la estancia</li>
+                            <li>Cantidad de personas</li>
+                            <li>Camas y camas suplementarias</li>
+                            <li>Lista de servicios de las habitaciones</li>
+                            <li>Lista de promociones de las habitaciones</li>
+                            
+                        </ul>
+                    </section>
+
+                    <h6>Vacantes </h6>
+                    <section id="vacantes" class="res">
+                        <div class="pantalla">Lista de Vacantes</div>
+                        
+                        <ul class="list-unstyled lista">
+                            <li>Cupo</li>
+                            <li>Sueldo</li>
+                            <li>Horario</li>
+                            <li>Ubicación</li>
+                            <li>Edad minima o maxima</li>
+                            <li>Sexo</li>
+                            
+                        </ul>
+                    </section>
+
+
+                    <h4 id="info">Información de uso</h4>
+                    <h5 id="info-1">Que es un chatbot?</h5>
+                    <p>Un chatbot es un programa informático con el que es posible mantener una conversación, tanto si queremos pedirle algún tipo de información o que lleve a cabo una acción.</p>
+
+                    <p>Un ejmplo. hoy en día si uno quiere comprarse unos zapatos a través de Asos tiene que acceder a su web, encontrar lo que busca y comprarlo. Pero, ¿y si Asos tuviera un bot? Solo sería necesario escribirle un mensaje a la marca a través de Facebook y decirle qué queremos. E incluso si tuviéramos dudas acerca de las medidas de las tallas podríamos consultarle en un momento nuestro problema.</p>
+
+                    <p>Una de las grandes ventajas de los chatbots es que, a diferencia de las aplicaciones, no se descargan, no es necesario actualizarlos y no ocupan espacio en la memoria del teléfono. Otra es que podemos tener integrados varios bots en un mismo chat. De esta forma nos evitaríamos estar saltando de una app a otra según lo que necesitemos en cada momento. ¿Las principales consecuencias? Experiencias de usuario más agradables e interacciones con el servicio de atención al cliente más rápidas y sencillas.</p>
+                   
+                </div>
+            </div>
+            
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-4" id="muestra">
+                
+            </div>
+            <div class="col-8">
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-left">
+                    <h6 class="text-muted lead">CONTACTO:</h6>
+                    <h6 class="text-muted">
+                        Carretera Ensenada - Tijuana No. 3918<br>
+                        Zona Playitas, CP. 22860.<br>
+                        Teléfonos: 01 (646)175-05-00.<br>
+                    </h6>
+                </div>
+
+                <div class="col-xs-12 col-md-6 text-right">
+                    <h6 class="text-muted lead">ENCUENTRANOS EN LAS REDES</h6>
+                    <div class="redes-footer">
+                        <a href="https://www.facebook.com/"><img class="footer-img" src="img/facebook.png"></a>
+                        <a href="https://twitter.com/"><img class="footer-img" src="img/twiter.png"></a>
+                        <a href="https://www.youtube.com/channel/UCBkAVBnWhqIahXRG6OQSHog/videos" target="_blank"><img class="footer-img" src="img/youtube.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 text-right">
+                    <p class="text-muted small">@2020.<br> Todos los derechos reservados.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </footer>
+
+    
+
+    <div class="bot heightandwidth" id="base_bot">
+    <button class="botontogle botom" id="bot" onclick="vizualizar()" style="height:15%;font-size:30px;">enviar</button>
+    <iframe id="frame" class="b_frame mystyle" style="width:100%;height:85%;" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/6a37e6a0-610d-421b-aed3-9cb707bd4e1e"></iframe>    
+    <div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+        var nav = document.getElementById("nav");
+        var navbar = document.getElementById("bases");
+        var row = document.getElementById("row");
+        var muestra = document.getElementById("muestra");
+        var muestraleft=muestra.offsetWidth;
+        var sticky = navbar.offsetTop;
+        winW = document.body.offsetWidth;
+        var inicialtamano=navbar.offsetWidth;
+        sticky = sticky - 50;
+        var Left = navbar.offsetLeft;
+        var tamanos = navbar.offsetWidth;
+        var rowLeft = row.offsetLeft;
+        var element = document.getElementById("frame");
+        var bot = document.getElementById("bot");
+        var base_bot = document.getElementById("base_bot");
+        
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+
+                    document.getElementById("bases").style.left = rowLeft + "px";
+                    document.getElementById("bases").style.width =muestraleft+"px";
+                    navbar.classList.add("sticky")
+
+            } else {
+                    navbar.classList.remove("sticky");
+                    navbar.removeAttribute("style");
+                    tamanos = navbar.offsetWidth;
+                    document.getElementById("bases").style.width =muestraleft+"px";
+                
+            }
+        }
+
+        function rezise() {
+            var Left = navbar.offsetLeft;
+            tamanos = navbar.offsetWidth;
+            muestraleft=muestra.offsetWidth;
+            rowLeft = row.offsetLeft;
+            if (navbar.classList.contains('sticky')) {
+                document.getElementById("bases").style.left = rowLeft + "px";
+            }
+            document.getElementById("bases").style.width =muestraleft+"px";
+
+            
+        }
+        function navtam() {
+            var navbarheight = nav.offsetHeight;
+            document.getElementById("jump").style.paddingTop = navbarheight+"px";
+            
+        }
+        function vizualizar(){
+            element.classList.toggle("mystyle");
+            bot.classList.toggle("botom");
+            base_bot.classList.toggle("heightandwidth");
+            base_bot.classList.toggle("taman");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

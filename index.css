@@ -1,0 +1,254 @@
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: transparent;
+  }
+  
+  ::selection {
+    color: black;
+    background: transparent;
+  }
+
+.sticky
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+}
+
+footer {
+	background-color:#1A1A1A;
+	height: 50%;
+  color: white;
+  padding: 15px;
+  position: relative;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+body
+{
+    background: white;
+    color: black;
+}
+.sticky {
+    position: fixed;
+    top: 0px;
+
+}
+.bot
+{
+    position:fixed;
+    width:30%;
+    height:70vh;
+    bottom:0;
+    right:0;
+}
+.mystyle{
+    display: none;
+}
+.botom{
+    height: auto;
+    width: auto;
+    background-color: red;
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+}
+.botom::after
+{
+    content: "desactive";
+    font-size: 10px;
+    color: yellow;
+}
+.botontogle{
+    background-color: #3358ff;
+    border: none;
+    color:rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.7);
+    display: block;
+}
+.botontogle:hover
+{
+    color:rgba(255, 255, 255, 1);
+}
+.heightandwidth
+{
+    height: auto;
+    width: auto;
+}
+.img-cicese{
+    background: url("cicese.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: 1px solid rgba(0, 255, 255, .7);
+}
+.footer-img
+{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    z-index: 99;
+    transition: 1s;
+}
+.footer-img:hover
+{   
+    border-radius: 1em;
+    box-shadow: 1px 1px rgba(255, 25, 0, .7);
+    transition: 1s;
+}
+
+h6{
+    font-size: 1.15rem;
+}
+.lista{
+    font-size: 1rem;
+    z-index: 50;
+    list-style-type: circle;
+}
+#restaurante
+{
+    background: url("img/res.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#albercas
+{
+    background: url("img/alb.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#actividades
+{
+    background: url("img/nino.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#promociones
+{
+    background: url("img/promo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#salones
+{
+    background: url("img/salon.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#habitaciones
+{
+    background: url("img/hab.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#vacantes
+{
+    background: url("img/emp.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.res
+{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.pantalla{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.navlink
+{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 650px)
+{
+    .taman
+    {
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+    }
+    .botontogle
+    {
+        background: rgba(36, 35, 35, 0.644);
+        right: 0;
+        top: 0;
+    }
+    .b_frame
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #restaurante
+{
+    background-attachment: initial;
+}
+#albercas
+{
+    background-attachment: initial;
+}
+#actividades
+{
+    background-attachment: initial;
+}
+#promociones
+{
+    background-attachment: initial;
+}
+#salones
+{
+    background-attachment: initial;
+}
+#habitaciones
+{
+    background-attachment: initial;
+}
+#vacantes
+{
+    background-attachment: initial;
+}
+
+.img-cicese{
+    background-attachment: initial;
+}
+.img-cicese .container
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+}
