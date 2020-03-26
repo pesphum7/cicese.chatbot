@@ -1,7 +1,3 @@
-
-# HTID:12688370: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
-php_value display_errors 1
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:12688370:
 Options -Indexes
 DirectoryIndex index.php index.htm index.html
 ErrorDocument 403 /index.html
